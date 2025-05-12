@@ -1,0 +1,872 @@
+:root {
+    --pri: #3498db;
+    --pribackground: #219B9D;
+    --secBackground: #F2EFE7;
+    --triBackground: #16404D;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: all 2ms cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: all 2ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 2ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--pribackground);
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+}
+
+nav {
+    width: 100%;
+    height: 14%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1.5rem;
+    font-family: "Alpha";
+    background-color: var(--secBackground);
+    border-radius: 12px;
+
+    .logo {
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        letter-spacing: 0.2rem;
+    }
+
+    button {
+        font-family: "General Sans";
+        font-weight: 600;
+        padding: 1rem;
+        border-radius: 12px;
+        border: none;
+        color: var(--secBackground);
+        background-color: var(--pribackground);
+        -webkit-transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+        -o-transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+        transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    button:active {
+        -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+                transform: scale(1.05);
+    }
+}
+
+.section-1 {
+    width: 100%;
+    height: 36%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url("/First\ project/Wallpaper\ for\ weather.jpg");
+    background-size: cover;
+    background-position: 0% 62%;
+    border-radius: 12px;
+    color: white;
+
+    .sec1-left {
+        p {
+            font-family: "General Sans";
+        }
+
+        h1 {
+            font-family: 2rem;
+        }
+    }
+
+    .sec1-right {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 0.2rem;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: end;
+
+        .cloud {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    }
+}
+
+.section-2 {
+    width: 100%;
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 12px;
+}
+
+.elem {
+    width: 20%;
+    height: 100%;
+    filter: contrast(2);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    padding: 0.7rem;
+    border-radius: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    -ms-flex-negative: 2;
+        flex-shrink: 2;
+
+    p {
+        border: none;
+        border-radius: 8px;
+        padding: 0.2rem 0.4rem;
+        background-color: var(--secBackground);
+    }
+}
+
+.elem1 {
+    background-image: url("/First project/Productivity\ Tools\ in\ Soft\ Pastels.png");
+    background-size: contain;
+    background-position: center;
+}
+
+.elem2 {
+    background-image: url("/First project/Day\ schedular.png");
+    background-size: contain;
+    background-position: center;
+}
+
+.elem3 {
+    background-image: url("/First project/Motivational.png");
+    background-size: contain;
+    background-position: center;
+}
+
+.elem4 {
+    background-image: url("/First project/pomodoro\ timer.png");
+    background-size: contain;
+    background-position: center;
+}
+
+.elem5 {
+    background-image: url("/First\ project/media/Focus\ Music\ Image.png");
+    background-size: contain;
+    background-position: center;
+}
+
+.detailedElem {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    background-color: var(--pribackground);
+}
+
+.todo-box {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 2rem;
+
+    .todo-left {
+        width: 30%;
+        height: 100%;
+        border-radius: 12px;
+        padding: 1.5rem;
+        background-color: var(--triBackground);
+
+        form {
+            height: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            gap: 1rem;
+
+            #taskInput {
+                padding: 0.8rem 1rem;
+                outline: none;
+                border-radius: 8px;
+                border: none;
+            }
+
+            #taskArea {
+                height: 75%;
+                padding: 0.8rem 1rem;
+                outline: none;
+                border-radius: 8px;
+                border: none;
+                resize: none;
+            }
+
+            #check {
+                margin-left: 0.2rem;
+                margin-top: 2rem;
+                outline: none;
+            }
+
+            span {
+                color: var(--secBackground);
+                font-family: "General Sans";
+                font-size: 0.9rem;
+            }
+
+            #submit {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 1.2rem;
+                font-weight: 400;
+                padding: 0.8rem 1rem;
+                border-radius: 8px;
+                border: none;
+            }
+
+        }
+    }
+
+    .todo-right {
+        width: 70%;
+        height: 100%;
+        display: -ms-grid;
+        display: grid;
+        -ms-flex-line-pack: start;
+            align-content: start;
+        -ms-grid-columns: 1fr 0.2rem 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        overflow-y: scroll;
+        border-radius: 12px;
+        padding: 1.5rem;
+        background-color: var(--triBackground);
+        font-size: 0.8rem;
+        text-transform: capitalize;
+
+        .todo-card {
+            width: 100%;
+
+            .todo-header {
+                div {
+                    font-family: "General Sans";
+                    font-size: .8rem;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    gap: 0.2rem;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                    color: var(--secBackground);
+
+                    input {
+                        width: 30px;
+                        height: 15px;
+                    }
+                }
+            }
+
+            .hiddenDetail {
+                display: none;
+                padding: 1rem;
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+                background-color: rgb(220, 216, 216);
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 1rem;
+            }
+        }
+
+        .todo-card div:nth-child(1) {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            color: var(--secBackground);
+            background-color: var(--pribackground);
+            padding: 1rem;
+            border-radius: 8px;
+
+            h2 {
+                font-family: monospace;
+                font-weight: 400;
+
+                sup {
+                    margin-left: 6px;
+                    font-family: monospace;
+                    font-weight: 200;
+                    font-size: 0.8rem;
+                    background-color: red;
+                    padding: 0.3rem;
+                    border-radius: 50px;
+                }
+            }
+
+            button {
+                background: none;
+                border: none;
+
+                i {
+                    color: var(--secBackground);
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+
+}
+
+.todo-nav {
+    color: var(--triBackground);
+    letter-spacing: 0.2rem;
+
+    button {
+        color: var(--secBackground);
+        padding: 0.6rem 2rem;
+        font-size: 1rem;
+    }
+}
+
+.schedularBox {
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1rem 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    -ms-flex-line-pack: start;
+        align-content: start;
+    overflow: auto;
+    background-color: var(--triBackground);
+    border-radius: 12px;
+
+    .day-time {
+        width: 100%;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 0.6rem;
+        border-radius: 8px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 1rem;
+        background-color: var(--pri);
+
+        h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.2rem;
+            color: var(--secBackground);
+        }
+
+        input {
+            color: white;
+            border: none;
+            outline: none;
+            border-radius: 12px;
+            padding: 1rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.5rem;
+            background-color: rgba(213, 212, 212, 0.411);
+        }
+
+        input::-webkit-input-placeholder {
+            color: var(--triBackground);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 2rem;
+        }
+
+        input::-moz-placeholder {
+            color: var(--triBackground);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 2rem;
+        }
+
+        input:-ms-input-placeholder {
+            color: var(--triBackground);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 2rem;
+        }
+
+        input::-ms-input-placeholder {
+            color: var(--triBackground);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 2rem;
+        }
+
+        input::placeholder {
+            color: var(--triBackground);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 2rem;
+        }
+    }
+}
+
+.motivation {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+    margin-top: 6rem;
+    padding: 1.5rem;
+    color: var(--secBackground);
+    background-color: var(--triBackground);
+    -webkit-box-shadow: 0px 0px 30px var(--secBackground);
+            box-shadow: 0px 0px 30px var(--secBackground);
+    border: none;
+    border-radius: 12px;
+
+    .motivation-top {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+
+        h2 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1.6rem;
+            color: var(--triBackground);
+            background-color: var(--secBackground);
+            padding: .9rem;
+            border: none;
+            border-radius: 8px;
+        }
+
+        i {
+            padding-right: 2rem;
+            font-size: 3rem;
+            opacity: .5;
+        }
+    }
+
+    p {
+        text-transform: capitalize;
+        word-spacing: 4px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    h2 {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.6rem;
+        color: var(--triBackground);
+        background-color: var(--secBackground);
+        padding: .9rem;
+        border: none;
+        border-radius: 8px;
+    }
+}
+
+.pomodoro-cont {
+    width: 100%;
+    height: 85%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+    .timer {
+        color: var(--secBackground);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 8rem;
+        font-weight: 600;
+    }
+
+    .start {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 2rem;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        background-color: var(--triBackground);
+    }
+
+    .pause {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 2rem;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        background-color: var(--triBackground);
+    }
+
+    .reset {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 2rem;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        background-color: var(--triBackground);
+    }
+}
+
+.music {
+    width: 100%;
+    height: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3rem;
+    border-radius: 8px;
+    background-color: var(--triBackground);
+
+    .sound-buttons {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        gap: 2rem;
+
+        .sound-img {
+            width: 15%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            font-family: "General Sans";
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: var(--secBackground);
+            padding: 0.2rem;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            aspect-ratio: 1/1;
+            border-radius: 8px;
+        }
+
+        .first {
+            background-image: url("/First\ project/media/Rain.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .second {
+            background: url("/First\ project/media/Lofi.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .third {
+            background: url("/First\ project/media/Forest.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    .controls {
+        width: 20%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        gap: 1rem;
+
+        #timeline {
+            width: 100%;
+            background-color: #219B9D;
+            height: 5px;
+            border-radius: 5px;
+            outline: none;
+            -webkit-transition: background 0.3s;
+            -o-transition: background 0.3s;
+            transition: background 0.3s;
+        }
+
+        #startStop {
+            width: 70%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            gap: 0.2rem;
+            font-family: monospace;
+            font-size: 1.8rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 8px;
+            padding: 0.8rem;
+            color: var(--triBackground);
+            background-color: var(--secBackground);
+
+            i {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+
+@media (max-width:600px) {
+    main {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+    }
+
+    .section-1 {
+        font-size: 0.8rem;
+    }
+
+    .section-2 {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+
+        .elem {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+        }
+    }
+
+    .detailedElem {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+
+        .todo-box {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+
+            .todo-left {
+                width: 100%;
+
+                form {
+                    #taskArea {
+                        height: 200px;
+                    }
+                }
+            }
+
+            .todo-right {
+                width: 100%;
+                height: 400px;
+                overflow: auto;
+                -ms-grid-columns: 1fr;
+                grid-template-columns: 1fr;
+
+                .todo-header {
+                    line-height: 1.6rem;
+                }
+            }
+        }
+    }
+
+    .schedularBox {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        overflow-y: scroll;
+        height: 78vh;
+    }
+
+    .motivation {
+        margin-top: 0px;
+
+        .motivation-top {
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+
+            i {
+                padding-top: 0.8rem;
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+        }
+    }
+
+    #Pomo-nav {
+        letter-spacing: 0.1rem;
+    }
+
+    .pomodoro-cont {
+        height: 78vh;
+
+        .timer-Btn {
+            width: 60%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            gap: 1.2rem;
+        }
+    }
+
+    .music {
+        height: 78vh;
+
+        .sound-buttons {
+            overflow-y: auto;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start;
+            border-radius: 8px;
+
+            .sound-img {
+                width: 100%;
+            }
+        }
+        .controls{
+            width: 100%;
+        }
+    }
+}.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}

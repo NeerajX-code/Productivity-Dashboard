@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <nav>
+            <div class="logo">
+                <h1>Productivity Dashboard</h1>
+            </div>
+            <button class="theme">Change Theme</button>
+        </nav>
+        <section class="section-1">
+            <div class="sec1-left"></div>
+            <div class="sec1-right"></div>
+        </section>
+        <section class="section-2" id="0">
+            <div class="elem elem1">
+                <p>ToDo-List</p>
+            </div>
+            <div class="elem elem2" id="1">
+                <p>Day Schedular</p>
+            </div>
+            <div class="elem elem3" id="2">
+                <p>Motivational Quotes</p>
+            </div>
+            <div class="elem elem4" id="3">
+                <p>Pomodoro Timer</p>
+            </div>
+            <div class="elem elem5" id="4">
+                <p>Focus Music</p>
+            </div>
+        </section>
+    </main>
+    <div class="detailedElem">
+        <nav class="todo-nav">
+            <h1>ToDo-List</h1>
+            <button class="back">Back</button>
+        </nav>
+        <div class="todo-box">
+            <div class="todo-left">
+                <form id="form">
+                    <input type="text" id="taskInput" placeholder="Enter Task">
+                    <textarea id="taskArea" placeholder="Enter Task Details"></textarea>
+                    <div>
+                        <input type="checkbox" name="check" id="check">
+                        <span>Marked as Important</span>
+                    </div>
+                    <input type="submit" id="submit">
+                </form>
+            </div>
+            <div class="todo-right">
+            </div>
+        </div>
+    </div>
+    <div class="detailedElem">
+        <nav class="todo-nav">
+            <h1>Day Schedular</h1>
+            <button class="back">Back</button>
+        </nav>
+        <div class="schedularBox">
+        </div>
+    </div>
+    <div class="detailedElem">
+        <nav class="todo-nav">
+            <h1>Motivational Quote</h1>
+            <button class="back">Back</button>
+        </nav>
+        <div class="motivation">
+            <div class="motivation-top">
+                <h2>Quote OF The Day</h2>
+                <i class="ri-double-quotes-r"></i>
+            </div>
+            <p>"Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma – which is
+                living with the results of other people’s thinking. Don’t let the noise of others’ opinions drown out
+                your own inner voice. And most important, have the courage to follow your heart and intuition. They
+                somehow already know what you truly want to become."
+            </p>
+            <h2>— Steve Jobs</h2>
+        </div>
+    </div>
+    <div class="detailedElem">
+        <nav class="todo-nav" id="Pomo-nav">
+            <h1>Pomodoro Timer</h1>
+            <button class="back">Back</button>
+        </nav>
+        <div class="pomodoro-cont">
+            <h1 class="timer">25:00</h1>
+            <div class="timer-Btn">
+                <button class="start">start</button>
+                <button class="pause">Pause</button>
+                <button class="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+    <div class="detailedElem">
+        <nav class="todo-nav">
+            <h1>Focus Music</h1>
+            <button class="back">Back</button>
+        </nav>
+        <div class="music">
+            <div class="sound-buttons">
+                <div class="sound-img first" id="Rain">
+                    <p>Rain</p>
+                </div>
+                <div class="sound-img second" id="Lofi">
+                    <p>Lofi</p>
+                </div>
+                <div class="sound-img third" id="Forest">
+                    <p>Forest</p>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="startStop">
+                    <i class="ri-play-large-fill"></i> Play</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

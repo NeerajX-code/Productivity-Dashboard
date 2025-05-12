@@ -1,0 +1,611 @@
+:root {
+  --pri: #3498db;
+  --pribackground: #219B9D;
+  --secBackground: #F2EFE7;
+  --triBackground: #16404D;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 2ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: var(--pribackground);
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+nav {
+  width: 100%;
+  height: 14%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  font-family: "Alpha";
+  background-color: var(--secBackground);
+  border-radius: 12px;
+}
+nav .logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.2rem;
+}
+nav button {
+  font-family: "General Sans";
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 12px;
+  border: none;
+  color: var(--secBackground);
+  background-color: var(--pribackground);
+  transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+nav button:active {
+  transform: scale(1.05);
+}
+
+.section-1 {
+  width: 100%;
+  height: 36%;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-image: url("/First project/Wallpaper for weather.jpg");
+  background-size: cover;
+  background-position: 0% 62%;
+  border-radius: 12px;
+  color: white;
+}
+.section-1 .sec1-left p {
+  font-family: "General Sans";
+}
+.section-1 .sec1-left h1 {
+  font-family: 2rem;
+}
+.section-1 .sec1-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  align-items: end;
+}
+.section-1 .sec1-right .cloud {
+  display: flex;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.section-2 {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.elem {
+  width: 20%;
+  height: 100%;
+  filter: contrast(2);
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  padding: 0.7rem;
+  border-radius: 12px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+  flex-shrink: 2;
+}
+.elem p {
+  border: none;
+  border-radius: 8px;
+  padding: 0.2rem 0.4rem;
+  background-color: var(--secBackground);
+}
+
+.elem1 {
+  background-image: url("/First project/Productivity Tools in Soft Pastels.png");
+  background-size: contain;
+  background-position: center;
+}
+
+.elem2 {
+  background-image: url("/First project/Day schedular.png");
+  background-size: contain;
+  background-position: center;
+}
+
+.elem3 {
+  background-image: url("/First project/Motivational.png");
+  background-size: contain;
+  background-position: center;
+}
+
+.elem4 {
+  background-image: url("/First project/pomodoro timer.png");
+  background-size: contain;
+  background-position: center;
+}
+
+.elem5 {
+  background-image: url("/First project/media/Focus Music Image.png");
+  background-size: contain;
+  background-position: center;
+}
+
+.detailedElem {
+  display: none;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background-color: var(--pribackground);
+}
+
+.todo-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.todo-box .todo-left {
+  width: 30%;
+  height: 100%;
+  border-radius: 12px;
+  padding: 1.5rem;
+  background-color: var(--triBackground);
+}
+.todo-box .todo-left form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.todo-box .todo-left form #taskInput {
+  padding: 0.8rem 1rem;
+  outline: none;
+  border-radius: 8px;
+  border: none;
+}
+.todo-box .todo-left form #taskArea {
+  height: 75%;
+  padding: 0.8rem 1rem;
+  outline: none;
+  border-radius: 8px;
+  border: none;
+  resize: none;
+}
+.todo-box .todo-left form #check {
+  margin-left: 0.2rem;
+  margin-top: 2rem;
+  outline: none;
+}
+.todo-box .todo-left form span {
+  color: var(--secBackground);
+  font-family: "General Sans";
+  font-size: 0.9rem;
+}
+.todo-box .todo-left form #submit {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: none;
+}
+.todo-box .todo-right {
+  width: 70%;
+  height: 100%;
+  display: grid;
+  align-content: start;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  overflow-y: scroll;
+  border-radius: 12px;
+  padding: 1.5rem;
+  background-color: var(--triBackground);
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+.todo-box .todo-right .todo-card {
+  width: 100%;
+}
+.todo-box .todo-right .todo-card .todo-header div {
+  font-family: "General Sans";
+  font-size: 0.8rem;
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  color: var(--secBackground);
+}
+.todo-box .todo-right .todo-card .todo-header div input {
+  width: 30px;
+  height: 15px;
+}
+.todo-box .todo-right .todo-card .hiddenDetail {
+  display: none;
+  padding: 1rem;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: rgb(220, 216, 216);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1rem;
+}
+.todo-box .todo-right .todo-card div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--secBackground);
+  background-color: var(--pribackground);
+  padding: 1rem;
+  border-radius: 8px;
+}
+.todo-box .todo-right .todo-card div:nth-child(1) h2 {
+  font-family: monospace;
+  font-weight: 400;
+}
+.todo-box .todo-right .todo-card div:nth-child(1) h2 sup {
+  margin-left: 6px;
+  font-family: monospace;
+  font-weight: 200;
+  font-size: 0.8rem;
+  background-color: red;
+  padding: 0.3rem;
+  border-radius: 50px;
+}
+.todo-box .todo-right .todo-card div:nth-child(1) button {
+  background: none;
+  border: none;
+}
+.todo-box .todo-right .todo-card div:nth-child(1) button i {
+  color: var(--secBackground);
+  font-size: 1.6rem;
+}
+
+.todo-nav {
+  color: var(--triBackground);
+  letter-spacing: 0.2rem;
+}
+.todo-nav button {
+  color: var(--secBackground);
+  padding: 0.6rem 2rem;
+  font-size: 1rem;
+}
+
+.schedularBox {
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-content: start;
+  overflow: auto;
+  background-color: var(--triBackground);
+  border-radius: 12px;
+}
+.schedularBox .day-time {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  padding: 0.6rem;
+  border-radius: 8px;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--pri);
+}
+.schedularBox .day-time h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+  color: var(--secBackground);
+}
+.schedularBox .day-time input {
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  padding: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5rem;
+  background-color: rgba(213, 212, 212, 0.411);
+}
+.schedularBox .day-time input::-moz-placeholder {
+  color: var(--triBackground);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2rem;
+}
+.schedularBox .day-time input::placeholder {
+  color: var(--triBackground);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2rem;
+}
+
+.motivation {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 6rem;
+  padding: 1.5rem;
+  color: var(--secBackground);
+  background-color: var(--triBackground);
+  box-shadow: 0px 0px 30px var(--secBackground);
+  border: none;
+  border-radius: 12px;
+}
+.motivation .motivation-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.motivation .motivation-top h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.6rem;
+  color: var(--triBackground);
+  background-color: var(--secBackground);
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+}
+.motivation .motivation-top i {
+  padding-right: 2rem;
+  font-size: 3rem;
+  opacity: 0.5;
+}
+.motivation p {
+  text-transform: capitalize;
+  word-spacing: 4px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.motivation h2 {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.6rem;
+  color: var(--triBackground);
+  background-color: var(--secBackground);
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+}
+
+.pomodoro-cont {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pomodoro-cont .timer {
+  color: var(--secBackground);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 8rem;
+  font-weight: 600;
+}
+.pomodoro-cont .start {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: var(--triBackground);
+}
+.pomodoro-cont .pause {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: var(--triBackground);
+}
+.pomodoro-cont .reset {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: var(--triBackground);
+}
+
+.music {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  border-radius: 8px;
+  background-color: var(--triBackground);
+}
+.music .sound-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.music .sound-buttons .sound-img {
+  width: 15%;
+  display: flex;
+  font-family: "General Sans";
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--secBackground);
+  padding: 0.2rem;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  border-radius: 8px;
+}
+.music .sound-buttons .first {
+  background-image: url("/First project/media/Rain.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.music .sound-buttons .second {
+  background: url("/First project/media/Lofi.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.music .sound-buttons .third {
+  background: url("/First project/media/Forest.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.music .controls {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.music .controls #timeline {
+  width: 100%;
+  background-color: #219B9D;
+  height: 5px;
+  border-radius: 5px;
+  outline: none;
+  transition: background 0.3s;
+}
+.music .controls #startStop {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  font-family: monospace;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem;
+  color: var(--triBackground);
+  background-color: var(--secBackground);
+}
+.music .controls #startStop i {
+  font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+  main {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .section-1 {
+    font-size: 0.8rem;
+  }
+  .section-2 {
+    height: -moz-fit-content;
+    height: fit-content;
+    flex-direction: column;
+  }
+  .section-2 .elem {
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+  .detailedElem {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .detailedElem .todo-box {
+    flex-direction: column;
+  }
+  .detailedElem .todo-box .todo-left {
+    width: 100%;
+  }
+  .detailedElem .todo-box .todo-left form #taskArea {
+    height: 200px;
+  }
+  .detailedElem .todo-box .todo-right {
+    width: 100%;
+    height: 400px;
+    overflow: auto;
+    grid-template-columns: 1fr;
+  }
+  .detailedElem .todo-box .todo-right .todo-header {
+    line-height: 1.6rem;
+  }
+  .schedularBox {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    overflow-y: scroll;
+    height: 78vh;
+  }
+  .motivation {
+    margin-top: 0px;
+  }
+  .motivation .motivation-top {
+    justify-content: space-between;
+  }
+  .motivation .motivation-top i {
+    padding-top: 0.8rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  #Pomo-nav {
+    letter-spacing: 0.1rem;
+  }
+  .pomodoro-cont {
+    height: 78vh;
+  }
+  .pomodoro-cont .timer-Btn {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .music {
+    height: 78vh;
+  }
+  .music .sound-buttons {
+    overflow-y: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 8px;
+  }
+  .music .sound-buttons .sound-img {
+    width: 100%;
+  }
+  .music .controls {
+    width: 100%;
+  }
+}
+.example {
+  display: grid;
+  transition: all 0.5s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background: linear-gradient(to bottom, white, black);
+}/*# sourceMappingURL=style.css.map */
